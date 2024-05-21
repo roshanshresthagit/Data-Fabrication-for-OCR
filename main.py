@@ -154,6 +154,8 @@ def create_data(img,x1,x2, y1,y2, imgno,ftype,textcolor,fontname)-> None:
             ycor2 = ycor1 + random.randint(35,45)
             # xcor3 = xcor1 
             # ycor3 = ycor2 + random.randint(35,45)
+            rot_ang = random.randint(-2,2)
+
             image = draw_rotated_text(image,rot_ang,(xcor1,ycor1),line1,textcolor,font = font_path)
             image = draw_rotated_text(image,rot_ang,(xcor2,ycor2),line2,textcolor,font = font_path)
         
